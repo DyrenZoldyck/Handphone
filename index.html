@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>password</title>
+    <linK rel="stylesheet" type="text/css" href="./style2.css">
+</head>
+
+<body>
+    <div class="login-form" class="form">
+        <h2></h2>
+        <form action="text">
+            <p></p>
+            <input type="password" name="LoginUser" id="text" required placeholder="(HURUF BESAR)">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        var truePass = 'LASTA'
+        var pass = document.getElementById('text')
+        pass.addEventListener('keyup', function () {
+            if (pass.value == truePass) {
+                window.location.assign("name.html");
+                document.getElementById('text').innerHTML = 'Pasword Benar'
+            } else {
+                document.getElementById('text').innerHTML = 'Pasword Salah'
+            }
+        })
+    </script>
+
+</body>
